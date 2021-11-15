@@ -41,7 +41,7 @@ public class SpaceInvaders extends Application {
         launch();
     }
 
-    public void start(Stage level) throws Exception {
+    public void start(Stage level) {
         Canvas canvas = new Canvas(WIDTH, HEIGHT);
         graphics = canvas.getGraphicsContext2D();
         Timeline timeline = new Timeline(new KeyFrame(Duration.millis(100), e -> run(graphics)));
